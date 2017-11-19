@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Описание сайта">
+	<meta name="keywords" content="Ключевые слова">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://allfont.ru/allfont.css?fonts=betinascriptc" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">		
+
+	<title>weather</title>
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<div class="container">
+
+			<!-- cities in top -->
+			<div class="top-block">
+				<div class="city" data-name="Вінниця" data-id="689558">Вінниця</div>
+				<div class="city" data-name="Дніпро" data-id="709930">Дніпро</div>
+				<div class="city" data-name="Донецьк" data-id="709717">Донецьк</div>
+				<div class="city" data-name="Житомир‎" data-id="686967">Житомир‎</div>
+				<div class="city" data-name="Запоріжжя" data-id="687700">Запоріжжя</div>
+				<div class="city" data-name="Івано-Франківськ‎" data-id="707471">Івано-Франківськ‎</div>
+				<div class="city" data-name="Київ" data-id="703447">Київ</div>
+				<div class="city" data-name="Луганськ" data-id="702658">Луганськ</div>
+				<div class="city" data-name="Луцьк" data-id="702569">Луцьк</div>
+				<div class="city" data-name="Львів" data-id="702550">Львів</div>
+				<div class="city" data-name="Миколаїв‎" data-id="700569">Миколаїв‎</div>
+			</div>
+
+			<div class="middle-block">
+
+				<!-- left-block -->
+				<div class="left-block">
+					<div class="mobile-main-info">
+						<div>
+							<div class="title">Київ</div>
+							<div class="weather_desc"><span></span></div>
+						</div>
+						<div class="main-info">
+							<img class="main-img" src="" alt="">
+							<div class="temp"><span></span><sup> o</sup></div>
+						</div>
+					</div>
+
+					<div class="buttons">
+						<button class="show-cities">Міста</button>
+					</div>
+					<div class="list-cities hide">
+						<div class="city" data-name="Вінниця" data-id="689558">Вінниця</div>
+						<div class="city" data-name="Дніпро" data-id="709930">Дніпро</div>
+						<div class="city" data-name="Донецьк" data-id="709717">Донецьк</div>
+						<div class="city" data-name="Житомир‎" data-id="686967">Житомир‎</div>
+						<div class="city" data-name="Запоріжжя" data-id="687700">Запоріжжя</div>
+						<div class="city" data-name="Івано-Франківськ‎" data-id="707471">Івано-Франківськ‎</div>
+						<div class="city" data-name="Київ" data-id="703447">Київ</div>
+						<div class="city" data-name="Луганськ" data-id="702658">Луганськ</div>
+						<div class="city" data-name="Луцьк" data-id="702569">Луцьк</div>
+						<div class="city" data-name="Львів" data-id="702550">Львів</div>
+						<div class="city" data-name="Миколаїв‎" data-id="700569">Миколаїв‎</div>
+						<div class="city" data-name="Одеса" data-id="698740">Одеса</div>
+						<div class="city" data-name="Полтава" data-id="696643">Полтава</div>
+						<div class="city" data-name="Рівне" data-id="695594">Рівне</div>
+						<div class="city" data-name="Суми" data-id="692194">Суми</div>
+						<div class="city" data-name="Тернопіль" data-id="691650">Тернопіль</div>
+						<div class="city" data-name="Ужгород‎" data-id="690548">Ужгород‎</div>
+						<div class="city" data-name="Харків‎" data-id="706483">Харків‎</div>
+						<div class="city" data-name="Херсон" data-id="706448">Херсон</div>
+						<div class="city" data-name="Хмельницький‎" data-id="706369">Хмельницький‎</div>
+						<div class="city" data-name="Черкаси" data-id="710791">Черкаси</div>
+						<div class="city" data-name="Чернівці‎" data-id="710719">Чернівці‎</div>
+						<div class="city" data-name="Чернігів" data-id="710735">Чернігів</div>
+					</div>
+
+
+					<div class="days">
+						<div class="temp-min"><span></span><sup> o</sup></div>
+						<img width="50px" src="" alt="">
+						<div class="temp-max"><span></span><sup> o</sup></div>
+						<div class="day-name">Пн</div>
+						<div class="date active" data-target="table0"><span></span></div>
+					</div>
+					<div class="days">
+						<div class="temp-min"><span></span><sup> o</sup></div>
+						<img width="50px" src="" alt="">
+						<div class="temp-max"><span></span><sup> o</sup></div>
+						<div class="day-name">Вт</div>
+						<div class="date" data-target="table1"><span></span></div>
+					</div>
+					<div class="days">
+						<div class="temp-min"><span></span><sup> o</sup></div>
+						<img width="50px" src="" alt="">
+						<div class="temp-max"><span></span><sup> o</sup></div>
+						<div class="day-name">Ср</div>
+						<div class="date" data-target="table2"><span></span></div>
+					</div>
+					<div class="days">
+						<div class="temp-min"><span></span><sup> o</sup></div>
+						<img width="50px" src="" alt="">
+						<div class="temp-max"><span></span><sup> o</sup></div>
+						<div class="day-name">Чт</div>
+						<div class="date" data-target="table3"><span></span></div>
+					</div>
+					<div class="days">
+						<div class="temp-min"><span></span><sup> o</sup></div>
+						<img width="50px" src="" alt="">
+						<div class="temp-max"><span></span><sup> o</sup></div>
+						<div class="day-name">Пт</div>
+						<div class="date" data-target="table4"><span></span></div>
+					</div>
+				</div>
+
+				<!-- main block -->
+
+				<div class="main-block">
+					<div class="title">Київ</div>
+					<div class="weather_desc"><span></span></div>
+					<div class="main-info">
+						
+						<img class="main-img" src="" alt="">
+						<div class="temp"><span></span><sup> o</sup></div>
+
+					</div>
+
+					<div class="detail-info">
+						<table id="table0" border="1">
+							<tr>
+								<th rowspan="3"></th>
+								<th colspan="2">ніч</th>
+								<th colspan="2">ранок</th>
+								<th colspan="2">день</th>
+								<th colspan="2">вечір</th>
+							</tr>
+							<tr>
+								<td>00:00</td>
+								<td>03:00</td>
+								<td>06:00</td>
+								<td>09:00</td>
+								<td>12:00</td>
+								<td>15:00</td>
+								<td>18:00</td>
+								<td>21:00</td>
+							</tr>
+							<tr>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+							</tr>
+							<tr>
+								<td>Температура (<sup>o</sup>C)</td>			
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Тиск (мм)</td>				
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Хмарність (%)</td>					
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Вітер (м/с)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Опади (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<table id="table1" border="1">
+							<tr>
+								<th rowspan="3"></th>
+								<th colspan="2">ніч</th>
+								<th colspan="2">ранок</th>
+								<th colspan="2">день</th>
+								<th colspan="2">вечір</th>
+							</tr>
+							<tr>
+								<td>00:00</td>
+								<td>03:00</td>
+								<td>06:00</td>
+								<td>09:00</td>
+								<td>12:00</td>
+								<td>15:00</td>
+								<td>18:00</td>
+								<td>21:00</td>
+							</tr>
+							<tr>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+							</tr>
+							<tr>
+								<td>Температура (<sup>o</sup>C)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Тиск (мм)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Хмарність (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Вітер (м/с)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Опади (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<table id="table2" border="1">
+							<tr>
+								<th rowspan="3"></th>
+								<th colspan="2">ніч</th>
+								<th colspan="2">ранок</th>
+								<th colspan="2">день</th>
+								<th colspan="2">вечір</th>
+							</tr>
+							<tr>
+								<td>00:00</td>
+								<td>03:00</td>
+								<td>06:00</td>
+								<td>09:00</td>
+								<td>12:00</td>
+								<td>15:00</td>
+								<td>18:00</td>
+								<td>21:00</td>
+							</tr>
+							<tr>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+							</tr>
+							<tr>
+								<td>Температура (<sup>o</sup>C)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Тиск (мм)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Хмарність (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Вітер (м/с)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Опади (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<table id="table3" border="1">
+							<tr>
+								<th rowspan="3"></th>
+								<th colspan="2">ніч</th>
+								<th colspan="2">ранок</th>
+								<th colspan="2">день</th>
+								<th colspan="2">вечір</th>
+							</tr>
+							<tr>
+								<td>00:00</td>
+								<td>03:00</td>
+								<td>06:00</td>
+								<td>09:00</td>
+								<td>12:00</td>
+								<td>15:00</td>
+								<td>18:00</td>
+								<td>21:00</td>
+							</tr>
+							<tr>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+							</tr>
+							<tr>
+								<td>Температура (<sup>o</sup>C)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Тиск (мм)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Хмарність (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Вітер (м/с)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Опади (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<table id="table4" border="1">
+							<tr>
+								<th rowspan="3"></th>
+								<th colspan="2">ніч</th>
+								<th colspan="2">ранок</th>
+								<th colspan="2">день</th>
+								<th colspan="2">вечір</th>
+							</tr>
+							<tr>
+								<td>00:00</td>
+								<td>03:00</td>
+								<td>06:00</td>
+								<td>09:00</td>
+								<td>12:00</td>
+								<td>15:00</td>
+								<td>18:00</td>
+								<td>21:00</td>
+							</tr>
+							<tr>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+								<td><img src="" alt=""></td>
+							</tr>
+							<tr>
+								<td>Температура (<sup>o</sup>C)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Тиск (мм)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Хмарність (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Вітер (м/с)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Опади (%)</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- cities in bottom -->
+
+			<div class="bottom-block">
+				<div class="city" data-name="Одеса" data-id="698740">Одеса</div>
+				<div class="city" data-name="Полтава" data-id="696643">Полтава</div>
+				<div class="city" data-name="Рівне" data-id="695594">Рівне</div>
+				<div class="city" data-name="Суми" data-id="692194">Суми</div>
+				<div class="city" data-name="Тернопіль" data-id="691650">Тернопіль</div>
+				<div class="city" data-name="Ужгород‎" data-id="690548">Ужгород‎</div>
+				<div class="city" data-name="Харків‎" data-id="706483">Харків‎</div>
+				<div class="city" data-name="Херсон" data-id="706448">Херсон</div>
+				<div class="city" data-name="Хмельницький‎" data-id="706369">Хмельницький‎</div>
+				<div class="city" data-name="Черкаси" data-id="710791">Черкаси</div>
+				<div class="city" data-name="Чернівці‎" data-id="710719">Чернівці‎</div>
+				<div class="city" data-name="Чернігів" data-id="710735">Чернігів</div>
+			</div>
+		</div>
+
+
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+	</html>
