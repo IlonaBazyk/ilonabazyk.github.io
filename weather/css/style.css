@@ -266,6 +266,8 @@ html {
 	}
 	.mobile-main-info {
 		height: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -301,10 +303,6 @@ html {
 
 	.days .date span {
 		font-size: 1.3rem;
-	}
-	.mobile-main-info {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 	.mobile-main-info .main-info .main-img {
 		max-height: 65px;
