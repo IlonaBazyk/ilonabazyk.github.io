@@ -18549,7 +18549,7 @@ var App = function (_Component2) {
 		key: 'render',
 		value: function render() {
 			var body = null;
-			if (this.state.card || document.documentElement.clientWidth < 1135) {
+			if (this.state.card || document.documentElement.clientWidth < 1410) {
 				body = _react2.default.createElement(Card, { headers: this.props.headers, body: this.props.body });
 			} else {
 				body = _react2.default.createElement(Table, { headers: this.props.headers, body: this.props.body });
